@@ -2,11 +2,11 @@ import sys
 from setuptools import setup, find_packages
 
 install_requires = [
-    'routes==2.0',
+    'routes',
 ]
 if sys.version_info < (3, 4):
     install_requires.append('enum34')
-    install_requires.append('asyncio==0.2.1')
+    install_requires.append('asyncio')
 
 setup(
     name="Vase",
